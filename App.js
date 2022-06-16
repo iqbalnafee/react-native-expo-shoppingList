@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Image } from 'react-native';
 
 const App = () => {
   return (
@@ -7,6 +7,7 @@ const App = () => {
       <Text style={styles.text}>
         Hello Brinto
       </Text>
+      <Image style={styles.img} source={{ uri: 'https://randomuser.me/api/portraits/men/68.jpg' }} />
     </View>
   );
 };
@@ -16,6 +17,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
-  text:{ color: 'red', fontSize: 50 },
+  text: {
+    color: 'red',
+    fontSize: 50
+  },
+  img:{
+    width:100,
+    height:100,
+    borderRadius:10 / 2,
+  }
 });
 export default App;
