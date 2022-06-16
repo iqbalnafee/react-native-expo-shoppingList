@@ -1,11 +1,12 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 
-const Header = () => {
+const Header = (props) => {
+    const {title} = props;
   return (
     <View style={styles.header}>
       <Text style={styles.text}>
-        Hello Brinto
+        {title}
       </Text>
     </View>
   );
@@ -22,4 +23,8 @@ const styles = StyleSheet.create({
     textAlign:'center',
   },
 });
+
+Header.defaultProps = {
+    title:'Shopping List',
+}
 export default Header;
