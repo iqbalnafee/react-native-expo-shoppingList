@@ -13,11 +13,17 @@ const App = () => {
     {id:uuid.v4(),text:'Juice'},
   ]);
 
+  const deleteItems = (delteItemId) => {
+
+    setItems((items) =>  items.filter(f => f.id !== delteItemId))
+
+  }
+
   return (
     <View style={styles.container}>
       <Header title={'Shopping List'}/>
       <FlatList data={items} renderItem={({item}) => (
-        <ListItem item={item}/>
+        <ListItem item={item} deleteItems={deleteItems}/>
       )} />
     </View>
   );
