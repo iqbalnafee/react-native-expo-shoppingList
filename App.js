@@ -1,8 +1,9 @@
 import React,{useState} from 'react';
-import { View, Text, StyleSheet, Image,FlatList } from 'react-native';
+import { View, Text, StyleSheet, Image,FlatList,Alert } from 'react-native';
 import Header from './components/Header';
 import ListItem from './components/ListItem';
 import uuid from 'react-native-uuid';
+import AddItem from './components/AddItem';
 
 const App = () => {
 
@@ -19,9 +20,21 @@ const App = () => {
 
   }
 
+  const addItem = (itemText) => {
+    // if(itemText){
+    //   setItems((items) => [...items,{id:uuid.v4(),text:itemText}]);
+    // }
+    // else{
+    //   Alert.alert('Error','Please enter an item',{text:'ok'}); 
+    // }
+    setItems((items) => [...items,{id:uuid.v4(),text:itemText}]);
+
+  }
+
   return (
     <View style={styles.container}>
       <Header title={'Shopping List'}/>
+      <AddItem addItem={addItem}/>
       <FlatList data={items} renderItem={({item}) => (
         <ListItem item={item} deleteItems={deleteItems}/>
       )} />
