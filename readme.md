@@ -7,3 +7,5 @@
 8. npm i react-native-vector-icons
 9. npm link react-native-vector-icons
 10. npm i uuidv4
+
+N.B : If you clone the repo then you have to run npm install to produce the node_modules folder since it is in .gitignore
