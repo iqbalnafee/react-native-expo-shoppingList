@@ -38,3 +38,5 @@
 ```diff
 +N.B : If you clone the repo then you have to run "npm install" to produce the node_modules folder since it is in .gitignore
 ```
+
+- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `just check for color`
