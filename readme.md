@@ -24,4 +24,6 @@
 # if the new npm vesions are not compitable with expo then just run to rollback to previous vesion
 1. expo doctor --fix-dependencies
 
+# if react-test-render is not compitable the current version of react then simply run: npm i react-test-renderer --force --save-dev
+
 # CI CD end
