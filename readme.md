@@ -12,11 +12,12 @@
 
 # Expo doesn't come with a package for writing tests by default, you’d have to install a package to handle that like jest for testing
 1. npm i jest-expo --save-dev 
+# check the added jest script in package.json file
 
 # Next, we need to add react-test-renderer to our project:
 2. npm i react-test-renderer --save-dev 
 
-# if previous command need lates npm versions just run the following commands
+# if previous command need lates npm versions, just run the following commands
 1. npm install -g npm-check-updates
 2. ncu -u
 3. npm install
