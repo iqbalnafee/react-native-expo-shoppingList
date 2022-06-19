@@ -24,7 +24,13 @@
 # if the new npm vesions are not compitable with expo then just run to rollback to previous vesion
 1. expo doctor --fix-dependencies
 
-# if react-test-render is not compitable the current version of react then simply run: npm i react-test-renderer --force --save-dev
+# if react-test-render is not compitable the current version of react then simply run: npm i react-test-renderer@17.0.2 where 17.0.2 is my current version of react
+
+# to test a specific test file, run the following command:
+1. npm test [test file name]
+
+# input:  const tree = renderer.create(<App />).toJSON(); expect(tree.children.length).toBe(4);
+# output: number of child elements of parent element which is view in return 
 
 # CI CD end
 
