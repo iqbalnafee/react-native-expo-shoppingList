@@ -36,5 +36,5 @@
 # CI CD end
 
 ```diff
-@@ N.B : If you clone the repo then you have to run "npm install" to produce the node_modules folder since it is in .gitignore (and bold)@@
+N.B : If you clone the repo then you have to run "npm install" to produce the node_modules folder since it is in .gitignore
 ```
