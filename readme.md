@@ -27,3 +27,5 @@
 # if react-test-render is not compitable the current version of react then simply run: npm i react-test-renderer --force --save-dev
 
 # CI CD end
+
+N.B : If you clone the repo then you have to run "npm install" to produce the node_modules folder since it is in .gitignore
