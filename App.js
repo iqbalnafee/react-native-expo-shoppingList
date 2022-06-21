@@ -4,6 +4,7 @@ import Header from './components/Header';
 import ListItem from './components/ListItem';
 import uuid from 'react-native-uuid';
 import AddItem from './components/AddItem';
+import { NavigationContainer } from '@react-navigation/native';
 
 const App = () => {
 
@@ -43,13 +44,16 @@ const App = () => {
   }
 
   return (
-    <View style={styles.container}>
-      <Header title={'Shopping List'} />
-      <AddItem addItem={addItem} />
-      <FlatList data={items} renderItem={({ item }) => (
-        <ListItem item={item} deleteItems={deleteItems} />
-      )} />
-    </View>
+    <NavigationContainer>
+      <View style={styles.container}>
+        <Header title={'Shopping List'} />
+        <AddItem addItem={addItem} />
+        <FlatList data={items} renderItem={({ item }) => (
+          <ListItem item={item} deleteItems={deleteItems} />
+        )} />
+      </View>
+    </NavigationContainer>
+
   );
 };
 
