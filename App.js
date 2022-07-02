@@ -46,7 +46,7 @@ const App = () => {
   return (
     <NavigationContainer>
       <View style={styles.container}>
-        <Header title={'Shopping List'} />
+        <Header title={'Shopping '} />
         <AddItem addItem={addItem} />
         <FlatList data={items} renderItem={({ item }) => (
           <ListItem item={item} deleteItems={deleteItems} />

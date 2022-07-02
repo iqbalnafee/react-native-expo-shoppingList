@@ -13,7 +13,7 @@ const Header = (props) => {
 };
 const styles = StyleSheet.create({
     header: {
-    backgroundColor:'darkslateblue',
+    backgroundColor:'green',
     padding:15,
     height:60,
   },
