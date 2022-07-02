@@ -13,6 +13,7 @@ const App = () => {
     { id: uuid.v4(), text: 'Eggs' },
     { id: uuid.v4(), text: 'Bread' },
     { id: uuid.v4(), text: 'Juice' },
+    { id: uuid.v4(), text: 'Mayo' },
   ]);
 
   const deleteItems = (delteItemId) => {
