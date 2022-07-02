@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, Image, FlatList, Alert } from 'react-native';
+import { View, Text, StyleSheet, Image, FlatList, Alert, DatePickerAndroid } from 'react-native';
 import Header from './components/Header';
 import ListItem from './components/ListItem';
 import uuid from 'react-native-uuid';
@@ -44,15 +44,14 @@ const App = () => {
   }
 
   return (
-    <NavigationContainer>
+
       <View style={styles.container}>
-        <Header title={'Shopping List'} />
+        <Header title={'Shopping List'}  menu={'menu'}/>
         <AddItem addItem={addItem} />
         <FlatList data={items} renderItem={({ item }) => (
           <ListItem item={item} deleteItems={deleteItems} />
         )} />
       </View>
-    </NavigationContainer>
 
   );
 };
@@ -62,6 +61,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: 60,
+    backgroundColor:'green',
   }
 });
 
